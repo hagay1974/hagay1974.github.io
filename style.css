@@ -1,0 +1,49 @@
+#stoplight {
+    width: 150px;
+    height: 450px;
+    margin: 50px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: grey;
+    position: relative; /* Add this to position the countdown */
+}
+
+#stoplight.green{
+    background-color: green;
+}
+#stoplight.yellow{
+    background-color: yellow;
+}
+#stoplight.red{
+    background-color: red;
+}
+
+#stoplight.gray{
+    background-color: grey;
+}
+
+#countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.controls button {
+    margin: 5px;
+}
+
+#cycleCounter{
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
